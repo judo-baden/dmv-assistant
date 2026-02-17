@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) 2026 Badischer Judo Verband e.V.
+ * SPDX-License-Identifier: AGPL-3.0
+ */
+
 export const sleep = (ms: number) => new Promise(res => setTimeout(res, ms));
 
 export function qs<T extends Element = Element>(sel: string, root: ParentNode = document) {

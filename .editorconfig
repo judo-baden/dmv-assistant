@@ -10,13 +10,7 @@ insert_final_newline = true
 trim_trailing_whitespace = true
 
 [*.ts]
-indent_size = 2
-
-[*.json]
-indent_size = 2
+file_header_template = /**\nCopyright (c) 2026 Badischer Judo Verband e.V.\nSPDX-License-Identifier:AGPL-3.0\n*/
 
 [*.md]
 trim_trailing_whitespace = false
-
-[*{.yml,.yaml}]
-indent_size = 2

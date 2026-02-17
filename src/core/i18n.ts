@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) 2026 Badischer Judo Verband e.V.
+ * SPDX-License-Identifier: AGPL-3.0
+ */
+
 type Translations = Record<string, string>;
 
 const LANGS = new Set(['de', 'en']);
