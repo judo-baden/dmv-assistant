@@ -54,6 +54,12 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Upload dist as build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: build
+          path: dist/
+
       # Optional: Add test step if tests exist
       # - name: Test
       #   run: npm test
