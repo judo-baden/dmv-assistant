@@ -1,0 +1,32 @@
+[
+  {
+    "name": "dependencies",
+    "color": "36c5f0",
+    "description": "Dependency update PRs (automated or manual)"
+  },
+  {
+    "name": "dependabot",
+    "color": "1d76db",
+    "description": "Pull requests created by Dependabot"
+  },
+  {
+    "name": "security",
+    "color": "b60205",
+    "description": "Security-related updates or alerts"
+  },
+  {
+    "name": "npm",
+    "color": "cb3837",
+    "description": "Updates for npm (JavaScript/TypeScript) dependencies"
+  },
+  {
+    "name": "pip",
+    "color": "3776ab",
+    "description": "Updates for pip (Python) dependencies"
+  },
+  {
+    "name": "github-actions",
+    "color": "2088ff",
+    "description": "Updates for GitHub Actions workflows"
+  }
+]

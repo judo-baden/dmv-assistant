@@ -1,0 +1,42 @@
+# -----------------------------------------------------
+# Default: Text files use LF line endings
+# -----------------------------------------------------
+* text=auto eol=lf
+
+# -----------------------------------------------------
+# Explicit text types
+# -----------------------------------------------------
+*.ts   text
+*.tsx  text
+*.js   text
+*.jsx  text
+*.json text
+*.css  text
+*.html text
+*.md   text
+*.mjs  text
+*.cjs  text
+
+# -----------------------------------------------------
+# Binary files (no diffing)
+# -----------------------------------------------------
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.ico  binary
+*.zip  binary
+*.gz   binary
+*.mp4  binary
+
+# -----------------------------------------------------
+# Keep UTF-8 consistent
+# -----------------------------------------------------
+*.ts   working-tree-encoding=UTF-8
+*.js   working-tree-encoding=UTF-8
+*.json working-tree-encoding=UTF-8
+
+# -----------------------------------------------------
+# Prevent Git from messing with dist builds
+# -----------------------------------------------------
+dist/* -text
