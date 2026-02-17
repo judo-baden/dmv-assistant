@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) 2026 Badischer Judo Verband e.V.
+ * SPDX-License-Identifier: AGPL-3.0
+ */
+
 import { selectors } from '../config/selectors';
 import { waitFor, qsa, sleep } from '../core/dom';
 import { addStyle } from '../core/style';
