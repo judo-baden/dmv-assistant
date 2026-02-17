@@ -7,7 +7,7 @@ await build({
   entryPoints: ['src/main.user.ts'],
   bundle: true,
   format: 'iife',
-  target: ['es2020'],
+  target: ['es2022'],
   outfile: 'dist/dmv-assistant.user.js',
   banner: { js: header },
   logLevel: 'info'
