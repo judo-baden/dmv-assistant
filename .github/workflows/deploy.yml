@@ -1,4 +1,4 @@
-name: Build & Deploy MkDocs and Userscript
+name: Deploy MkDocs and Userscript
 
 on:
   workflow_run:
@@ -16,11 +16,15 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v6
 
+      - name: Set CI run ID
+        run: echo "CI_RUN_ID=${{ github.event.workflow_run.id }}" >> $GITHUB_ENV
+
       - name: Download build artifact from CI
         uses: actions/download-artifact@v6
         with:
           name: build
           path: dist
+          run-id: ${{ env.CI_RUN_ID }}
 
       - name: Copy Userscript to docs/downloads
         run: |
