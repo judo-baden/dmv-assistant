@@ -2,15 +2,27 @@
 # Weise Labels basierend auf Dateipfaden zu
 
 "feature":
-  - src/features/**
+  - changed-files:
+      - any-glob-to-any-file:
+          - src/features/**
 "core":
-  - src/core/**
+  - changed-files:
+      - any-glob-to-any-file:
+          - src/core/**
 "config":
-  - src/config/**
+  - changed-files:
+      - any-glob-to-any-file:
+          - src/config/**
 "i18n":
-  - src/i18n/**
+  - changed-files:
+      - any-glob-to-any-file:
+          - src/i18n/**
 "docs":
-  - docs/**
+  - changed-files:
+      - any-glob-to-any-file:
+          - docs/**
 "build":
-  - tools/**
-  - .github/workflows/**
+  - changed-files:
+      - any-glob-to-any-file:
+          - tools/**
+          - .github/workflows/**
