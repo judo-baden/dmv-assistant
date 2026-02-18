@@ -1,0 +1,22 @@
+site_name: DMV Assistant
+site_description: Dokumentation und UserScript-Auslieferung
+site_url: https://judo-baden.github.io/dmv-assistant/
+repo_url: https://github.com/judo-baden/dmv-assistant
+repo_name: GitHub
+nav:
+  - Startseite: index.md
+  - Installation: installation.md
+  - Features: features.md
+  - Entwicklung: entwicklung.md
+  - Mitarbeit & Lizenz: mitarbeit.md
+  - Beitrag leisten: contributing.md
+  - Lizenz: lizenz.md
+  - Download:
+      - Userscript: dmv-assistant.user.js
+theme:
+  name: material
+  language: de
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/judo-baden/dmv-assistant
