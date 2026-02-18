@@ -1,0 +1,16 @@
+# Beispielkonfiguration für den Labeler
+# Weise Labels basierend auf Dateipfaden zu
+
+"feature":
+  - src/features/**
+"core":
+  - src/core/**
+"config":
+  - src/config/**
+"i18n":
+  - src/i18n/**
+"docs":
+  - docs/**
+"build":
+  - tools/**
+  - .github/workflows/**
