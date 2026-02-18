@@ -41,3 +41,7 @@ Dieses Projekt steht unter der [GNU Affero General Public License Version 3 (AGP
 
 - Die eigentliche Projektbeschreibung bleibt in der README.md.
 - Die Dokumentation kann beliebig erweitert werden (Markdown-Dateien in `docs/`).
+
+
+## Contributors
+[![Contributors](https://contrib.rocks/image?repo=judo-baden/dmv-assistant&max=10)](https://github.com/judo-baden/dmv-assistant/graphs/contributors)
