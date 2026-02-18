@@ -59,3 +59,34 @@ jobs:
       # Optional: Add test step if tests exist
       # - name: Test
       #   run: npm test
+
+  deploy:
+    name: Deploy MkDocs and Userscript
+    needs: build-and-upload
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Download build artifact
+        uses: actions/download-artifact@v6
+        with:
+          name: build
+          path: dist
+
+      - name: Copy Userscript to docs/downloads
+        run: |
+          mkdir -p docs/downloads
+          cp dist/dmv-assistant.user.js docs/downloads/
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.x'
+
+      - name: Install MkDocs and Material theme
+        run: pip install mkdocs mkdocs-material
+
+      - name: Deploy with MkDocs
+        run: mkdocs gh-deploy --force
