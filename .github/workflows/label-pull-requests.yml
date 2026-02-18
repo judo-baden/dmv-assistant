@@ -1,0 +1,25 @@
+name: Assign PR author (PR #${{ github.event.pull_request.number }})
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  labeler:
+    permissions:
+      contents: read
+      pull-requests: write
+    runs-on: [ linux, ephemeral ]
+    name: Label Pull Requests
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+      - name: Label pull requests
+        uses: actions/labeler@v6
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          sync-labels: true
