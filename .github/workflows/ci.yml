@@ -65,6 +65,8 @@ jobs:
     needs: build-and-upload
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
+    permissions:
+      contents: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
