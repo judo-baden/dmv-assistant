@@ -16,7 +16,7 @@ dist/
 *.bundle.js
 *.bundle.js.map
 
-/docs/dmv-assistant.user.js
+/docs/downloads/dmv-assistant.user.js
 
 
 # -----------------------------------------------------

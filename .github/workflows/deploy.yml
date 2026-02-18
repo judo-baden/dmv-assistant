@@ -22,8 +22,10 @@ jobs:
           name: build
           path: dist
 
-      - name: Copy Userscript to docs
-        run: cp dist/dmv-assistant.user.js docs/
+      - name: Copy Userscript to docs/downloads
+        run: |
+          mkdir -p docs/downloads
+          cp dist/dmv-assistant.user.js docs/downloads/
 
       - name: Setup Python
         uses: actions/setup-python@v5

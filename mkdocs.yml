@@ -12,7 +12,7 @@ nav:
   - Beitrag leisten: contributing.md
   - Lizenz: lizenz.md
   - Download:
-      - Userscript: dmv-assistant.user.js
+      - Userscript: downloads/dmv-assistant.user.js
 theme:
   name: material
   language: de
