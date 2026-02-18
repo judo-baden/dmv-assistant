@@ -15,4 +15,4 @@ Willkommen zur DMV Assistant Dokumentation!
 
 Das Userscript steht nach jedem Release unter folgender URL zur Verfügung:
 
-[dmv-assistant.user.js](https://judo-baden.github.io/dmv-assistant/dmv-assistant.user.js)
+[dmv-assistant.user.js](https://judo-baden.github.io/dmv-assistant/downloads/dmv-assistant.user.js)
