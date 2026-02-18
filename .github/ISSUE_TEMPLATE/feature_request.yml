@@ -1,0 +1,41 @@
+name: Feature-Wunsch
+description: Schlage eine neue Funktion oder Verbesserung vor.
+title: "[FEATURE] Kurze Beschreibung"
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Danke für deinen Vorschlag! Bitte beschreibe dein Feature so genau wie möglich.**
+  - type: input
+    id: beschreibung
+    attributes:
+      label: Beschreibung
+      description: Was soll hinzugefügt oder verbessert werden?
+      placeholder: Beschreibe dein Feature
+    validations:
+      required: true
+  - type: textarea
+    id: nutzen
+    attributes:
+      label: Nutzen
+      description: Warum ist dieses Feature nützlich?
+      placeholder: Beschreibe den Mehrwert
+    validations:
+      required: true
+  - type: textarea
+    id: alternativen
+    attributes:
+      label: Alternativen
+      description: Gibt es alternative Lösungen?
+      placeholder: Alternativen, falls vorhanden
+    validations:
+      required: false
+  - type: textarea
+    id: weitere_infos
+    attributes:
+      label: Weitere Informationen
+      description: Sonstige Hinweise oder Kontext
+      placeholder: ...
+    validations:
+      required: false

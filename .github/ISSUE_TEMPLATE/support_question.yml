@@ -1,0 +1,33 @@
+name: Support/Frage
+description: Stelle eine Frage oder bitte um Unterstützung.
+title: "[SUPPORT] Kurze Beschreibung"
+labels: [question]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Bitte beschreibe dein Anliegen so genau wie möglich.**
+  - type: input
+    id: frage
+    attributes:
+      label: Frage/Problem
+      description: Was möchtest du wissen oder wobei benötigst du Hilfe?
+      placeholder: Deine Frage oder dein Problem
+    validations:
+      required: true
+  - type: textarea
+    id: bisheriges
+    attributes:
+      label: Bisherige Versuche
+      description: Was hast du bereits versucht?
+      placeholder: Beschreibe deine bisherigen Schritte
+    validations:
+      required: false
+  - type: textarea
+    id: weitere_infos
+    attributes:
+      label: Weitere Informationen
+      description: Sonstige Hinweise oder Kontext
+      placeholder: ...
+    validations:
+      required: false

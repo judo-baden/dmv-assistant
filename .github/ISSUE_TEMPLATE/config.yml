@@ -1,0 +1,7 @@
+blank_issues_enabled: false
+description: >-
+  Bitte nutze die bereitgestellten Templates für Bug Reports, Feature Requests, Dokumentationsprobleme, Support/Fragen oder Sicherheitsprobleme.
+contact_links:
+  - name: Support bei der DMV powered by DokuMe
+    url: https://djb.dokume.app/#/help
+    about: Hilfe und Support für DMV über DokuMe erhalten
