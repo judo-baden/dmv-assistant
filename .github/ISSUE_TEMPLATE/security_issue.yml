@@ -1,0 +1,29 @@
+name: Sicherheitsproblem
+description: Melde ein Sicherheitsproblem (bitte vertraulich melden!)
+title: "[SECURITY] Kurze Beschreibung"
+labels: [security]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Sicherheitsprobleme bitte nicht öffentlich melden!**
+        Schreibe eine E-Mail an [DEINE-EMAIL@BEISPIEL.DE] mit Details zum Problem.
+
+        _Dieses Template dient nur als Hinweis. Bitte keine sensiblen Informationen öffentlich posten!_
+
+  - type: input
+    id: kontakt
+    attributes:
+      label: Kontaktmöglichkeit
+      description: Wie können wir dich für Rückfragen erreichen?
+      placeholder: E-Mail-Adresse oder GitHub-Handle
+    validations:
+      required: false
+  - type: textarea
+    id: weitere_infos
+    attributes:
+      label: Weitere Informationen (keine sensiblen Details!)
+      description: Optional, falls du uns noch etwas mitteilen möchtest.
+      placeholder: ...
+    validations:
+      required: false

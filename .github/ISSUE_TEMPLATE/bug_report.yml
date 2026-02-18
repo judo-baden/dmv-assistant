@@ -1,0 +1,57 @@
+name: Fehler melden
+description: Melde einen Fehler oder Bug im Projekt.
+title: "[BUG] Kurze Fehlerbeschreibung"
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Danke für deine Meldung! Bitte fülle das folgende Formular so genau wie möglich aus.**
+  - type: input
+    id: beschreibung
+    attributes:
+      label: Fehlerbeschreibung
+      description: Beschreibe den Fehler so detailliert wie möglich.
+      placeholder: Was ist passiert?
+    validations:
+      required: true
+  - type: input
+    id: schritte
+    attributes:
+      label: Schritte zum Reproduzieren
+      description: Wie kann man den Fehler nachstellen?
+      placeholder: Schritt-für-Schritt-Anleitung
+    validations:
+      required: true
+  - type: input
+    id: erwartetes_verhalten
+    attributes:
+      label: Erwartetes Verhalten
+      description: Was hättest du stattdessen erwartet?
+      placeholder: Erwartetes Ergebnis
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Füge ggf. Screenshots hinzu, um das Problem zu verdeutlichen.
+      placeholder: Screenshot hier einfügen
+    validations:
+      required: false
+  - type: input
+    id: umgebung
+    attributes:
+      label: Umgebung
+      description: Betriebssystem, Browser, Version etc.
+      placeholder: z.B. Windows 11, Chrome 120
+    validations:
+      required: false
+  - type: textarea
+    id: weitere_infos
+    attributes:
+      label: Weitere Informationen
+      description: Sonstige Hinweise oder Kontext
+      placeholder: ...
+    validations:
+      required: false

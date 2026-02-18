@@ -1,0 +1,33 @@
+name: Dokumentationsproblem
+description: Melde einen Fehler oder Wunsch bezüglich der Dokumentation.
+title: "[DOC] Kurze Beschreibung"
+labels: [documentation]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Danke für deinen Hinweis zur Dokumentation!**
+  - type: input
+    id: beschreibung
+    attributes:
+      label: Beschreibung
+      description: Was ist unklar, fehlerhaft oder fehlt?
+      placeholder: Beschreibe das Problem oder den Wunsch
+    validations:
+      required: true
+  - type: textarea
+    id: vorschlag
+    attributes:
+      label: Verbesserungsvorschlag
+      description: Wie könnte die Dokumentation verbessert werden?
+      placeholder: Dein Vorschlag
+    validations:
+      required: false
+  - type: textarea
+    id: weitere_infos
+    attributes:
+      label: Weitere Informationen
+      description: Sonstige Hinweise oder Kontext
+      placeholder: ...
+    validations:
+      required: false
