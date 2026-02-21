@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         DMV Assistant (DJB Portal)
 // @namespace    https://djb.dokume.app/
-// @version      0.1.0
+// @version      0.1.0 // x-release-please-version
 // @description  CSV-Import & Fortschritt + Auto-Bereinigung für Sammelbestellungen im DJB-Portal.
 // @author       Code.Sport
 // @match        https://djb.dokume.app/*
